@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zach Perry's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+    </style>
+    <script>console.log("Hello World");</script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Zach Perry's Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,11 +26,71 @@
     <main>
         <section>
             <h2>Introduction</h2>
-            <p>Hello! My name is Zach, and this is my portfolio website.</p>
+            <h3>Welcome Note</h3>
+            <p><strong>Hello!</strong> My name is <em>Zach</em>, and this is my portfolio website.</p>
+            <aside>
+                <p>Quick Info: <abbr title="Hypertext Markup Language">HTML</abbr> is used for structuring content.</p>
+            </aside>
+            <figure>
+                <img src="profile.jpg" alt="Profile Picture">
+                <figcaption>My Profile Picture</figcaption>
+            </figure>
+            <blockquote>
+                <p>"Code is like humor. When you have to explain it, it’s bad."</p>
+                <cite>- Cory House</cite>
+            </blockquote>
+            <hr>
+            <pre><code>console.log("Welcome to my portfolio!");</code></pre>
+            <details>
+                <summary>More about me</summary>
+                <p>I am a passionate developer.</p>
+            </details>
+            <table>
+                <caption>Skills Overview</caption>
+                <tr>
+                    <th>Skill</th>
+                    <th>Experience</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Expert</td>
+                </tr>
+            </table>
+            <form>
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+            <dl>
+                <dt>HTML</dt>
+                <dd>A markup language for structuring web content.</dd>
+            </dl>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <canvas id="myCanvas"></canvas>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+            <iframe src="https://example.com"></iframe>
+            <noscript>Your browser does not support JavaScript!</noscript>
+            <dialog open>
+                <p>Welcome to my site!</p>
+                <button onclick="this.parentElement.close()">Close</button>
+            </dialog>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Zach Perry. All rights reserved.</p>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <address>Contact me at <a href="mailto:email@example.com">email@example.com</a></address>
     </footer>
 </body>
 </html>
