@@ -9,6 +9,20 @@
         body { font-family: Arial, sans-serif; }
     </style>
     <script>console.log("Hello World");</script>
+    <title>Semantic Custom Element Example</title>
+    <style>
+        custom-info {
+            display: block;
+            background: #f0f8ff;
+            border: 2px solid #008cba;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        custom-info h2 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -86,6 +100,10 @@
             </dialog>
         </section>
 
+        <custom-info>
+            <h2>Weeeee custom semantic element</h2>
+        </custom-info-info>
+
         <section id="extras">
             <h2>Extra Elements Playground</h2>
             <div>
@@ -146,6 +164,15 @@
             <p>This is a definition: <dfn title="HTML is the language of the web.">HTML</dfn></p>
             <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
         </section>
+        <hello-world></hello-world>
+        <script>
+            class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+            }
+            customElements.define('hello-world', HelloWorld);
+        </script>
     </main>
     <footer>
         <p>Footer: Zach Perry zperry@ucsd.edu</p>
